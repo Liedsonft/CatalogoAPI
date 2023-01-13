@@ -1,6 +1,6 @@
 package br.com.mv.FilmeAPI.services;
 
-import br.com.mv.FilmeAPI.config.Security.models.FilmeModel;
+import br.com.mv.FilmeAPI.models.FilmeModel;
 import br.com.mv.FilmeAPI.repositories.FilmeRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

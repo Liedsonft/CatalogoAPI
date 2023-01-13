@@ -1,6 +1,6 @@
 package br.com.mv.FilmeAPI.config.Security;
 
-import br.com.mv.FilmeAPI.config.Security.models.UserModel;
+import br.com.mv.FilmeAPI.models.UserModel;
 import br.com.mv.FilmeAPI.repositories.UserRepository;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;

@@ -2,7 +2,7 @@ package br.com.mv.FilmeAPI.controllers;
 
 
 import br.com.mv.FilmeAPI.dtos.FilmeDto;
-import br.com.mv.FilmeAPI.config.Security.models.FilmeModel;
+import br.com.mv.FilmeAPI.models.FilmeModel;
 import br.com.mv.FilmeAPI.services.FilmeService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.data.domain.Page;

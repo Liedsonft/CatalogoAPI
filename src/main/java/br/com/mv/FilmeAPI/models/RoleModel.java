@@ -1,4 +1,4 @@
-package br.com.mv.FilmeAPI.config.Security.models;
+package br.com.mv.FilmeAPI.models;
 
 import br.com.mv.FilmeAPI.enums.RoleName;
 import org.springframework.security.core.GrantedAuthority;

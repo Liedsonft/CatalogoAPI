@@ -1,4 +1,4 @@
-package br.com.mv.FilmeAPI.config.Security.models;
+package br.com.mv.FilmeAPI.models;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -9,7 +9,7 @@ import java.io.Serializable;
         private static final long serialVersionUID = 1L;
 
         @Id
-        @GeneratedValue(strategy = GenerationType.IDENTITY)
+        @GeneratedValue(strategy = GenerationType.SEQUENCE)
         @Column(name = "id", nullable = false)
         private Long id;
 

@@ -1,6 +1,8 @@
 package br.com.mv.FilmeAPI.dtos;
 
 
+import br.com.mv.FilmeAPI.models.CategoriaModel;
+
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
@@ -19,7 +21,6 @@ public class FilmeDto {
     @NotBlank
     @Size(max = 12)
     private String duracao;
-
 
     public String getName() {
         return name;

@@ -1,4 +1,4 @@
-package br.com.mv.FilmeAPI.config.Security.models;
+package br.com.mv.FilmeAPI.models;
 
 import javax.persistence.*;
 import java.io.Serializable;
