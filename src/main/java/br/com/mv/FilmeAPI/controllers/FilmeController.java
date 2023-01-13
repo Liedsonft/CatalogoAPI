@@ -2,7 +2,7 @@ package br.com.mv.FilmeAPI.controllers;
 
 
 import br.com.mv.FilmeAPI.dtos.FilmeDto;
-import br.com.mv.FilmeAPI.models.FilmeModel;
+import br.com.mv.FilmeAPI.config.Security.models.FilmeModel;
 import br.com.mv.FilmeAPI.services.FilmeService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.data.domain.Page;
@@ -38,7 +38,7 @@ public class FilmeController {
     }
     @PreAuthorize("hasAnyRole('ROLE_ADMIN', 'ROLE_USER')")
     @GetMapping
-    public ResponseEntity<Page<FilmeModel>> getAllParkingSpots(@PageableDefault(page = 0, size = 5, sort = "name", direction = Sort.Direction.ASC) Pageable pageable) {
+    public ResponseEntity<Page<FilmeModel>> getAllFilme(@PageableDefault(page = 0, size = 5, sort = "name", direction = Sort.Direction.ASC) Pageable pageable) {
         return ResponseEntity.status(HttpStatus.OK).body(filmeService.findAll(pageable));
     }
     @PreAuthorize("hasAnyRole('ROLE_ADMIN', 'ROLE_USER')")
@@ -62,7 +62,7 @@ public class FilmeController {
     }
     @PreAuthorize("hasRole('ROLE_ADMIN')")
     @PutMapping("/{name}")
-    public  ResponseEntity<Object> updatePatient (@PathVariable(value = "name") String name,
+    public  ResponseEntity<Object> updateFilme(@PathVariable(value = "name") String name,
                                                   @RequestBody @Valid FilmeDto filmeDto) {
         Optional<FilmeModel> filmeModelOptional = filmeService.findByName(name);
         if (!filmeModelOptional.isPresent()) {

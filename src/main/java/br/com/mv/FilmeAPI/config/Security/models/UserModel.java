@@ -1,4 +1,4 @@
-package br.com.mv.FilmeAPI.models;
+package br.com.mv.FilmeAPI.config.Security.models;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

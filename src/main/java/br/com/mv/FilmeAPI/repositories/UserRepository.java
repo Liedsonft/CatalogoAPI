@@ -1,7 +1,7 @@
 package br.com.mv.FilmeAPI.repositories;
 
 
-import br.com.mv.FilmeAPI.models.UserModel;
+import br.com.mv.FilmeAPI.config.Security.models.UserModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
